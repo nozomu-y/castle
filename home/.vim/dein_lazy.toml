@@ -1,0 +1,6 @@
+[[plugins]]
+repo = 'rhysd/vim-clang-format'
+hook_add = """
+    autocmd FileType cpp ClangFormatAutoEnable
+    autocmd FileType c ClangFormatAutoEnable
+"""

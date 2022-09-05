@@ -1,0 +1,162 @@
+# Required
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+# Interface
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+# Interface
+[[plugins]]
+repo = 'dracula/vim'
+
+# Interface
+[[plugins]]
+repo = 'arcticicestudio/nord-vim'
+
+# Interface
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+depends = ['vim-airline-themes']
+hook_add = """
+    let g:airline#extensions#tabline#enabled = 1
+    " nmap <C-p> <Plug>AirlineSelectPrevTab
+    nmap <Tab> <Plug>AirlineSelectNextTab
+    set laststatus=2
+    set showtabline=2
+    set t_Co=256
+    " let g:airline#extensions#tabline#buffer_idx_mode=1
+    let g:airline_powerline_fonts=1
+    let g:airline#extensions#default#layout = [
+        \ ['a', 'b', 'c'],
+        \ ['x', 'y', 'z', 'error'],
+    \ ]
+    " \ ['x', 'y', 'z', 'error', 'warning'],
+    let g:airline_section_z = airline#section#create(['linenr', 'maxlinenr', ':%v'])
+    if !exists('g:airline_symbols')
+        let g:airline_symbols = {}
+    endif
+
+    " unicode symbols
+    let g:airline_left_sep = '»'
+    let g:airline_left_sep = '▶'
+    let g:airline_right_sep = '«'
+    let g:airline_right_sep = '◀'
+    let g:airline_symbols.linenr = '␊'
+    let g:airline_symbols.linenr = '␤'
+    let g:airline_symbols.linenr = '¶'
+    let g:airline_symbols.branch = '⎇'
+    let g:airline_symbols.paste = 'ρ'
+    let g:airline_symbols.paste = 'Þ'
+    let g:airline_symbols.paste = '∥'
+    let g:airline_symbols.whitespace = 'Ξ'
+
+    " airline symbols
+    let g:airline_left_sep = ''
+    let g:airline_left_alt_sep = ''
+    let g:airline_right_sep = ''
+    let g:airline_right_alt_sep = ''
+    let g:airline_symbols.branch = ''
+    let g:airline_symbols.readonly = ''
+    let g:airline_symbols.linenr = ''
+    let g:airline_symbols.linenr = ''
+    " let g:airline_symbols.colnr = 'Co'
+    let g:airline_symbols.maxlinenr = '☰ '
+    let g:airline_symbols.maxlinenr = ''
+"""
+
+# Interface
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+# Utils
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+source = 'release'
+build = 'yarn install'
+
+[[plugins]]
+repo = 'markonm/traces.vim'
+
+[[plugins]]
+repo = 'mg979/vim-visual-multi'
+
+[[plugins]]
+repo = 'simeji/winresizer'
+
+[[plugins]]
+repo = 'rbgrouleff/bclose.vim'
+
+[[plugins]]
+repo = 'preservim/nerdcommenter'
+hook_add = """
+    let g:NERDSpaceDelims=1
+    let g:NerdDefaultAlign='left'
+    nmap <C-_> <Plug>NERDCommenterToggle
+    vmap <C-_> <Plug>NERDCommenterToggle<CR>gv
+"""
+
+[[plugins]]
+repo = 'beanworks/vim-phpfmt'
+on_ft = ['php']
+
+# [[plugins]]
+# repo = 'lynnard/pandoc-preview.vim'
+
+[[plugins]]
+repo = 'goerz/jupytext.vim'
+hook_add = """
+    let g:jupytext_fmt = 'py:percent'
+    let g:jupytext_filetype_map = {'py': 'python'}
+"""
+
+[[plugins]]
+repo = 'jupyter-vim/jupyter-vim'
+
+[[plugins]]
+repo = 'severin-lemaignan/vim-minimap'
+
+[[plugins]]
+repo = 'jwalton512/vim-blade'
+
+[[plugins]]
+repo = 'chrisbra/csv.vim'
+
+# LaTeX
+[[plugins]]
+repo = 'lervag/vimtex'
+hook_add = """
+    let g:vimtex_compiler_latexmk = { 
+            \ 'executable' : 'latexmk',
+            \ 'options' : [ 
+            \   '-xelatex',
+            \   '-file-line-error',
+            \   '-synctex=1',
+            \   '-interaction=nonstopmode',
+            \ ],
+            \}
+    let g:vimtex_view_general_viewer = '/Applications/Skim.app/Contents/SharedSupport/displayline'
+    let g:vimtex_view_general_options = '@line @pdf @tex'
+    let g:vimtex_view_method= 'skim'
+    let g:vimtex_quickfix_open_on_warning = 0
+    let g:tex_conceal = ''
+"""
+
+# SATySFi
+[[plugins]]
+repo = 'qnighy/satysfi.vim'
+
+# Markdown
+[[plugins]]
+repo = 'iamcco/mathjax-support-for-mkdp'
+
+# Markdown
+[[plugins]]
+repo = 'iamcco/markdown-preview.vim'
+
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+[[plugins]]
+repo = 'udalov/kotlin-vim'
+
