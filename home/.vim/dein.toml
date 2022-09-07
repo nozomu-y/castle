@@ -16,6 +16,10 @@ repo = 'arcticicestudio/nord-vim'
 
 # Interface
 [[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+# Interface
+[[plugins]]
 repo = 'vim-airline/vim-airline'
 depends = ['vim-airline-themes']
 hook_add = """
@@ -64,10 +68,6 @@ hook_add = """
     let g:airline_symbols.maxlinenr = '☰ '
     let g:airline_symbols.maxlinenr = ''
 """
-
-# Interface
-[[plugins]]
-repo = 'vim-airline/vim-airline-themes'
 
 # Utils
 [[plugins]]
