@@ -74,6 +74,24 @@ hook_add = """
 repo = 'neoclide/coc.nvim'
 source = 'release'
 build = 'yarn install'
+hook_add = """
+let g:coc_global_extensions = [
+  \ 'coc-snippets',
+  \ 'coc-json',
+  \ 'coc-tsserver',
+  \ 'coc-prettier',
+  \ 'coc-html',
+  \ 'coc-eslint',
+  \ 'coc-emmet',
+  \ 'coc-vetur',
+  \ 'coc-texlab',
+  \ 'coc-pyright',
+  \ 'coc-phpls',
+  \ 'coc-css',
+  \ 'coc-clangd',
+  \ 'coc-blade',
+\]
+"""
 
 [[plugins]]
 repo = 'markonm/traces.vim'
@@ -113,8 +131,17 @@ hook_source = """
     nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 """
 
-# [[plugins]]
-# repo = 'ryanoasis/vim-devicons'
+[[plugins]]
+repo = 'ryanoasis/vim-devicons'
+hook_source = """
+  " フォルダアイコンを表示
+  let g:WebDevIconsNerdTreeBeforeGlyphPadding = ""
+  let g:WebDevIconsUnicodeDecorateFolderNodes = v:true
+  " after a re-source, fix syntax matching issues (concealing brackets):
+  if exists('g:loaded_webdevicons')
+    call webdevicons#refresh()
+  endif
+"""
 
 [[plugins]]
 repo = 'kyazdani42/nvim-web-devicons'
