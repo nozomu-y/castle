@@ -1,4 +1,6 @@
 {
+  "suggest.noselect": true,
+  "pyright.inlayHints.enable": false,
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "php",
