@@ -41,7 +41,7 @@ if dein#check_install()
 endif
 
 " END of dein.vim configuration
-
+let g:dracula_colorterm = 0
 " colorscheme nord
 colorscheme dracula
 " colorscheme iceberg
