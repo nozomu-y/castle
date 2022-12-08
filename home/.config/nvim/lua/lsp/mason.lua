@@ -8,6 +8,11 @@ if not mason_lsp_config_status then
     return
 end
 
+local mason_lsp_ls_status, mason_null_ls = pcall(require, "mason-null-ls")
+if not mason_lsp_ls_status then
+    return
+end
+
 mason.setup()
 
 mason_lsp_config.setup({
@@ -15,5 +20,13 @@ mason_lsp_config.setup({
         "tsserver",
         "html",
         "sumneko_lua",
+    },
+})
+
+mason_null_ls.setup({
+    ensure_installed = {
+        "prettier",
+        "stylua",
+        "eslint_d",
     },
 })

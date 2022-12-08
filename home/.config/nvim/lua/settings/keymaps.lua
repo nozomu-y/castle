@@ -4,6 +4,7 @@ local keymap = vim.keymap
 
 -- general keymaps
 keymap.set("i", "jj", "<ESC>")
+keymap.set("n", "<ESC><ESC>", ":nohl<CR>")
 
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
