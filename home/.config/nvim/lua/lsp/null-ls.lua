@@ -13,6 +13,9 @@ null_ls.setup({
         formatting.prettier,
         formatting.stylua,
         diagnostics.eslint_d,
+        formatting.autopep8,
+        diagnostics.flake8,
+        formatting.isort,
     },
     -- configure format on save
     on_attach = function(client, bufnr)

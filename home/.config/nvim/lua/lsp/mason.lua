@@ -20,6 +20,7 @@ mason_lsp_config.setup({
         "tsserver",
         "html",
         "sumneko_lua",
+        "pyright",
     },
 })
 
@@ -28,5 +29,8 @@ mason_null_ls.setup({
         "prettier",
         "stylua",
         "eslint_d",
+        "autopep8",
+        "flake8",
+        "isort",
     },
 })

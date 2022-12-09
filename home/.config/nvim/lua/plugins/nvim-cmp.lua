@@ -48,3 +48,35 @@ cmp.setup({
     },
 })
 
+local snippet = luasnip.snippet
+local snippet_node = luasnip.snippet_node
+local text_node = luasnip.text_node
+local insert_node = luasnip.insert_node
+local function_node = luasnip.function_node
+local choice_node = luasnip.choice_node
+local dynamic_node = luasnip.dynamic_node
+local restore_node = luasnip.restore_node
+
+luasnip.add_snippets("cpp", {
+    snippet("atcoder",{
+        text_node({
+            "#include <bits/stdc++.h>",
+            "// #include <atcoder/all>",
+            "// using namespace atcoder;",
+            "",
+            "using namespace std;",
+            "using ll = long long;",
+            "",
+            "int main() {",
+            "\tios::sync_with_stdio(false);",
+            "\tstd::cin.tie(nullptr);",
+            "",
+        }),
+        insert_node(0),
+        text_node({
+            "",
+            "}",
+            "",
+        }),
+    })
+})
