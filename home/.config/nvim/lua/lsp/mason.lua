@@ -21,6 +21,7 @@ mason_lsp_config.setup({
         "html",
         "sumneko_lua",
         "pyright",
+        "jdtls",
     },
 })
 
@@ -32,5 +33,6 @@ mason_null_ls.setup({
         "autopep8",
         "flake8",
         "isort",
+        "google_java_format",
     },
 })
