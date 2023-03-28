@@ -24,6 +24,7 @@ mason_lsp_config.setup({
 		"texlab",
 		"intelephense",
         "volar",
+        "jdtls",
 	},
 })
 
@@ -37,5 +38,6 @@ mason_null_ls.setup({
 		"isort",
 		"proselint",
         "phpcsfixer",
+        "google_java_format",
 	},
 })
