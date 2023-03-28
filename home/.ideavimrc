@@ -1,0 +1,11 @@
+inoremap <silent> jj <ESC>
+set virtualedit=onemore
+set clipboard+=unnamedplus
+
+nmap <TAB> <Action>(NextTab)
+
+Plug 'preservim/nerdtree'
+noremap <leader>e :NERDTreeToggle<CR>
+noremap <C-w>w :NERDTreeFocus<CR>
+
+Plug 'tpope/vim-commentary'
