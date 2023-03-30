@@ -13,6 +13,8 @@ require("plugins.gitsigns")
 require("plugins.nvim-autopairs")
 require("plugins.treesitter")
 require("plugins.comment")
+require("plugins.csv-tools")
+require("plugins.indent-blankline")
 
 require("lsp.mason")
 require("lsp.lspsaga")
