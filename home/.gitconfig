@@ -1,0 +1,22 @@
+# This is Git's per-user configuration file.
+[user]
+	email = 46639706+nozomu-y@users.noreply.github.com
+	name = Nozomu Yamazaki
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	editor = nvim
+[push]
+    default = simple
+[init]
+	defaultBranch = main
+[color]
+	status = auto
+	diff   = auto
+	branch = auto
+	interactive = auto
+	grep = auto
+	ui = true
