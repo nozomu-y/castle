@@ -6,6 +6,7 @@ require("settings.keymaps")
 
 require("plugins.lualine")
 require("plugins.bufferline")
+require("plugins.close-buffers")
 require("plugins.nvim-tree")
 require("plugins.telescope")
 require("plugins.nvim-cmp")
