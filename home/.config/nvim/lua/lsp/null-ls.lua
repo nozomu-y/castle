@@ -17,6 +17,7 @@ null_ls.setup({
         diagnostics.flake8,
         formatting.isort,
         formatting.phpcsfixer,
+        formatting.latexindent,
     },
     -- configure format on save
     on_attach = function(client, bufnr)

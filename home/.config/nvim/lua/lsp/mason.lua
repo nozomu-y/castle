@@ -39,5 +39,6 @@ mason_null_ls.setup({
 		"proselint",
         "phpcsfixer",
         "google_java_format",
+        "latexindent",
 	},
 })
