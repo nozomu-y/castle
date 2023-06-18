@@ -18,3 +18,12 @@ keymap.set("n", "<leader>fh", builtin.help_tags, {})
 
 -- bufferline
 keymap.set("n", "<TAB>", ":BufferLineCycleNext<CR>")
+
+-- copilot
+vim.g.copilot_assume_mapped = true
+keymap.set(
+	"i",
+	"<C-g>",
+	'copilot#Accept("<CR>")',
+	{ silent = true, expr = true, script = true, replace_keycodes = false }
+)
