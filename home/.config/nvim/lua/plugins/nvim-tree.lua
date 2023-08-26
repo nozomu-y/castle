@@ -7,4 +7,8 @@ end
 vim.g.loaded = 1
 vim.g.loaded_netrwPlugin = 1
 
-nvimtree.setup()
+nvimtree.setup({
+    filters = {
+        git_ignored = false,
+    },
+})
