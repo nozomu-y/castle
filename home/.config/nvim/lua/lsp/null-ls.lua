@@ -13,7 +13,7 @@ null_ls.setup({
         formatting.prettier,
         formatting.stylua,
         diagnostics.eslint_d,
-        formatting.autopep8,
+        formatting.black,
         diagnostics.flake8,
         formatting.isort,
         formatting.phpcsfixer,

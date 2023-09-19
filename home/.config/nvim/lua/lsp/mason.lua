@@ -33,7 +33,7 @@ mason_null_ls.setup({
 		"prettier",
 		"stylua",
 		"eslint_d",
-		"autopep8",
+		"black",
 		"flake8",
 		"isort",
 		"proselint",
