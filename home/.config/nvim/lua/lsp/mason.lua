@@ -23,8 +23,8 @@ mason_lsp_config.setup({
 		"pyright",
 		"texlab",
 		"intelephense",
-        "volar",
-        "jdtls",
+		"volar",
+		"jdtls",
 	},
 })
 
@@ -38,8 +38,8 @@ mason_null_ls.setup({
 		"pyproject_flake8",
 		"isort",
 		"proselint",
-        "phpcsfixer",
-        "google_java_format",
-        "latexindent",
+		"phpcsfixer",
+		"google_java_format",
+		"latexindent",
 	},
 })
