@@ -52,6 +52,9 @@ return packer.startup(function(use)
 	use("hrsh7th/cmp-path")
 	use("github/copilot.vim")
 
+	-- wrapping
+	use("andrewferrier/wrapping.nvim")
+
 	-- snippets
 	use("L3MON4D3/LuaSnip")
 	use("saadparwaiz1/cmp_luasnip")
