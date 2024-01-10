@@ -16,6 +16,7 @@ require("plugins.treesitter")
 require("plugins.comment")
 require("plugins.csv-tools")
 require("plugins.indent-blankline")
+require("plugins.wrapping")
 
 require("lsp.mason")
 require("lsp.lspsaga")
