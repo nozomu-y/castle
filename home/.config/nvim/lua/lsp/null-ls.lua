@@ -14,7 +14,6 @@ null_ls.setup({
         formatting.stylua,
         diagnostics.eslint_d,
         formatting.black,
-        diagnostics.flake8,
         formatting.isort,
         formatting.phpcsfixer,
         formatting.latexindent,
@@ -32,4 +31,6 @@ null_ls.setup({
             })
         end
     end,
+		-- diagnostics.flake8,
+		diagnostics.pyproject_flake8,
 })
