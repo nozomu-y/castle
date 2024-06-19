@@ -110,6 +110,6 @@ lspconfig["volar"].setup({
 })
 
 lspconfig["jdtls"].setup({
-    default_capabilities = capabilities,
-    on_attach = on_attach,
+	default_capabilities = capabilities,
+	on_attach = on_attach,
 })
