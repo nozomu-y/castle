@@ -33,7 +33,7 @@ return packer.startup(function(use)
 
 	-- status line
 	use("nvim-lualine/lualine.nvim")
-	use({ "akinsho/bufferline.nvim", tag = "v3.*" })
+	use({ "akinsho/bufferline.nvim" })
 	use("kazhala/close-buffers.nvim")
 
 	-- file explorer
