@@ -17,7 +17,7 @@ mason.setup()
 
 mason_lsp_config.setup({
 	ensure_installed = {
-		"tsserver",
+		"ts_ls",
 		"html",
 		"lua_ls",
 		"pyright",
