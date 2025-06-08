@@ -87,7 +87,7 @@ return packer.startup(function(use)
 	})
 
 	-- formatting & linting
-	use("jose-elias-alvarez/null-ls.nvim")
+	use("nvimtools/none-ls.nvim")
 	use("jayp0521/mason-null-ls.nvim")
 
 	-- treesitter

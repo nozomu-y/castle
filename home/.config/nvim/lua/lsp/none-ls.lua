@@ -1,14 +1,14 @@
-local status, null_ls = pcall(require, "null-ls")
+local status, none_ls = pcall(require, "null-ls")
 if not status then
 	return
 end
 
-local formatting = null_ls.builtins.formatting
-local diagnostics = null_ls.builtins.diagnostics
+local formatting = none_ls.builtins.formatting
+local diagnostics = none_ls.builtins.diagnostics
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
-null_ls.setup({
+none_ls.setup({
 	sources = {
 		formatting.prettier,
 		formatting.stylua,
